@@ -21,6 +21,8 @@ import java.util.Date;
 @Table(value = "mdb_actor") //pojo关联到数据库表
 public class MdbActor extends MpaasBasePojo {//继承该类后，会获得一个rowId字段
 
+    int i = 0;
+
     //RowID 标识主键字段，pojo需要insert、update、delete操作时，必须指定RowId
     //RowID.sequence 主键类型为数字类型时，需要指定对应的sequence名称
     //RowID.type
